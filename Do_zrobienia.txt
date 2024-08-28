@@ -1,0 +1,5 @@
+import pandas as pd
+
+prodB = pd.read_csv('tabela.csv')[pd.read_csv('tabela.csv')['Produkt'] == 'Produkt B'][['Cena', 'Sprzedaż']]
+prodB.to_csv('ProdBCenaSprz.csv', index=False)
+# Przefiltrować jak wyzej

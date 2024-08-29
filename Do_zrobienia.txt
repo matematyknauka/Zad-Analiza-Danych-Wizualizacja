@@ -1,2 +1,1 @@
-Filtrowanie rekordów.
-filtr_modul(plik, kolumna, wartosc)
+Potestować zad2ModulRegresja.py

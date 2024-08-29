@@ -1,1 +1,3 @@
 Potestować zad2ModulRegresja.py
+zad2.py rozwinąć bardziej. Obliczyć średnią, odchylenie, itd, a także regresję dla wszystkich produktów.
+Można zrobić katalog do zapisywania tabel i dodać do .gitignore.

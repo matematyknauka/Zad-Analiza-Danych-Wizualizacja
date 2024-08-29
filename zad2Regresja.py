@@ -1,10 +1,11 @@
 # Regresja liniowa dla zależności sprzedaży (ilości sprzedanego towaru) od ceny
-# !!! Przefiltrować dla konkretnego towaru
 from sklearn.linear_model import LinearRegression
 import numpy as np
 import pandas as pd
 
-df_SC = pd.read_csv('tabela.csv')[['Cena', 'Sprzedaż']]
+produkt = pd.read_csv('tabela.csv')[pd.read_csv('tabela.csv')['Produkt'] == 'Produkt A'] # Dla produktu A
+
+df_SC = produkt[['Cena', 'Sprzedaż']]
 
 # Przygotowanie danych
 X = df_SC[['Cena']].values  # Zmienna niezależna

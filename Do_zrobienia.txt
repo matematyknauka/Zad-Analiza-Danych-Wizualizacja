@@ -1,2 +1,2 @@
-Potestować zad2ModulRegresja.py
-zad2.py rozwinąć bardziej. Obliczyć średnią, odchylenie, itd, a także regresję dla wszystkich produktów.
+Osobno tabele (dla każdego produktu)
+Potestować zad2ModulRegresja.py Regresja osobno. Ststystyki są osobno.

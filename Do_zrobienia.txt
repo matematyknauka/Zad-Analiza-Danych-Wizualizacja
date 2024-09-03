@@ -1,1 +1,2 @@
 Zrobić skrypt .py, który uruchamia inne skrypty w odpowiedniej kolejności.
+W zad2Regresja.py komentarze dodać jeśli ich nie ma.

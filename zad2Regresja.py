@@ -1,23 +1,11 @@
-# Regresja liniowa dla zależności sprzedaży (ilości sprzedanego towaru) od ceny
-from sklearn.linear_model import LinearRegression
-import numpy as np
 import pandas as pd
+import zad2ModulRegresja as reg
+import glob
+import os.path as osp
 
-produkt = pd.read_csv('tabela.csv')[pd.read_csv('tabela.csv')['Produkt'] == 'Produkt A'] # Dla produktu A
-
-df_SC = produkt[['Cena', 'Sprzedaż']]
-
-# Przygotowanie danych
-X = df_SC[['Cena']].values  # Zmienna niezależna
-y = df_SC['Sprzedaż'].values     # Zmienna zależna
-
-# Tworzenie modelu regresji
-model = LinearRegression()
-model.fit(X, y)
-
-# Współczynniki
-slope = model.coef_[0]  # Współczynnik kierunkowy
-intercept = model.intercept_  # Wyraz wolny
-
-print(f'Współczynnik kierunkowy: {slope}')
-print(f'Wyraz wolny: {intercept}')
+for path in glob.glob('./tab_prod_csv/*'):
+    bsn = osp.basename(path)
+    spltx = osp.splitext(bsn)[0]
+    prod = pd.read_csv('./tab_prod_csv/' + spltx + '.csv')
+    regr = reg.regresja(prod[['Cena']], prod[['Sprzedaż']])
+    print(regr)

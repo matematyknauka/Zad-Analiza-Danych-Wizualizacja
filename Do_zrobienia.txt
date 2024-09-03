@@ -1,2 +1,1 @@
-Osobno tabele (dla każdego produktu)
-Potestować zad2ModulRegresja.py Regresja osobno. Ststystyki są osobno.
+Zrobić skrypt .py, który uruchamia inne skrypty w odpowiedniej kolejności.

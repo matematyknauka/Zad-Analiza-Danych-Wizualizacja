@@ -1,1 +1,1 @@
-W zad2Regresja.py komentarze dodać jeśli ich nie ma.
+Przeprowadź analizę klastrów, aby zidentyfikować grupy produktów o podobnych cechach.
